@@ -1,10 +1,10 @@
 import { Profile } from './Profile/profile';
-// import { Statistics } from './Statistics/statistics';
+import { Statistics } from './Statistics/statistics';
 // import { FriendList } from './Friends/friends';
 // import { TransactionHistory } from './Transactions/transactions';
 
 import user from './Data/user.json';
-// import data from './Data/data.json';
+import data from './Data/data.json';
 // import friends from './Data/friends.json';
 // import transactions from './Data/transactions.json';
 
@@ -26,6 +26,10 @@ export const App = () => {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
+      />
+      <Statistics
+        title=''
+        stats={data}
       />
       {/* React homework template */}
     </div>
