@@ -4,7 +4,8 @@ export const Profile = ({ username, tag, location, avatar, stats }) => (
   <div class="profile">
     <div class="description">
       <img
-        src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+        src={avatar}
+        // src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
         alt="User avatar"
         class="avatar"
       />
@@ -35,5 +36,5 @@ Profile.propTypes = {
   tag: PropTypes.string,
   location: PropTypes.string,
   avatar: PropTypes.string,
-  stats: PropTypes.object
+  stats: PropTypes.object,
 };

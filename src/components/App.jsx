@@ -1,12 +1,12 @@
 import { Profile } from './Profile/profile';
 import { Statistics } from './Statistics/statistics';
-// import { FriendList } from './Friends/friends';
-// import { TransactionHistory } from './Transactions/transactions';
+import { FriendList } from './Friends/friends';
+import { TransactionHistory } from './Transactions/transactions';
 
 import user from './Data/user.json';
 import data from './Data/data.json';
-// import friends from './Data/friends.json';
-// import transactions from './Data/transactions.json';
+import friends from './Data/friends.json';
+import transactions from './Data/transactions.json';
 
 export const App = () => {
   return (
@@ -27,11 +27,9 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics
-        title=''
-        stats={data}
-      />
-      {/* React homework template */}
+      <Statistics title="" stats={data} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
