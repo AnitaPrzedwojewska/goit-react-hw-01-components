@@ -1,3 +1,4 @@
+import { Wrapper } from './app.styled';
 import { Profile } from './Profile/profile';
 import { Statistics } from './Statistics/statistics';
 import { FriendList } from './Friends/friends';
@@ -10,7 +11,7 @@ import transactions from './Data/transactions.json';
 
 export const App = () => {
   return (
-    <div
+    <Wrapper
       style={{
         height: '100vh',
         display: 'flex',
@@ -30,6 +31,6 @@ export const App = () => {
       <Statistics title="" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+    </Wrapper>
   );
 };
