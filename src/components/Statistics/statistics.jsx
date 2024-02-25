@@ -1,20 +1,34 @@
+import {
+  StatsCard,
+  Title,
+  StatList,
+  StatItem,
+  Label,
+  Quantity,
+} from './statistics.styled';
+import randomColor from 'randomcolor';
 import PropTypes from 'prop-types';
 
 export const Statistics = ({ title = 'Upload stats', stats }) => (
-  <section class="statistics">
-    <h2 class="title">Upload stats</h2>
-    <ul class="stat-list">
+  <StatsCard>
+    <Title>Upload stats</Title>
+    <StatList>
       {stats.map(stat => (
-        <li class="item">
-          <span class="label">{stat.label}</span>
-          <span class="percentage">{stat.percentage}%</span>
-        </li>
+        // const color=getRandomHexColor();
+        <StatItem color={randomColor}>
+          <Label>{stat.label}</Label>
+          <Quantity>{stat.percentage}%</Quantity>
+        </StatItem>
       ))}
-    </ul>
-  </section>
+    </StatList>
+  </StatsCard>
 );
 
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.array.isRequired,
 };
+
+// function getRandomHexColor() {
+//   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+// }

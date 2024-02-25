@@ -5,11 +5,12 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 240px;
+  width: 100%;
   margin: 10px;
   background-color: yellow;
   border: 1px black;
   border-radius: 10px;
+  overflow: hidden;
 `;
 
 export const Description = styled.div`
@@ -20,14 +21,14 @@ export const Description = styled.div`
   witdh: 100%;
   margin: 0;
   padding: 20px;
-  background-color: pink;
+  background-color: lightgoldenrodyellow;
   border: 1px black;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 `;
 
 export const Avatar = styled.img`
   width: 50%;
-  margin: 0 auto;
+  margin-bottom: 20px;
 `;
 
 export const Name = styled.p`
@@ -50,7 +51,7 @@ export const Stats = styled.ul`
   width: 100%;
   padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style-type: none;
   margin-block: 0;
   padding-inline-start: 0;

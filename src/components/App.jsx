@@ -13,11 +13,12 @@ export const App = () => {
   return (
     <Wrapper
       style={{
-        height: '100vh',
+        // height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
+        width: '360px',
+        fontSize: '1em',
         color: '#010101',
       }}
     >
