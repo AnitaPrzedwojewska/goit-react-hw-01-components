@@ -1,29 +1,32 @@
-import { Transactions, Transaction } from './transactions.styled';
+import {
+  Transactions,
+  Transaction,
+  HeaderEntry,
+  Entry,
+} from './transactions.styled';
 import PropTypes from 'prop-types';
 
 const TransactionItem = ({ item }) => (
   <Transaction>
-    <td>{item.type}</td>
-    <td>{item.amount}</td>
-    <td>{item.currency}</td>
+    <Entry>{item.type}</Entry>
+    <Entry>{item.amount}</Entry>
+    <Entry>{item.currency}</Entry>
   </Transaction>
 );
 
-export const TransactionHistory = ({items}) => (
+export const TransactionHistory = ({ items }) => (
   <Transactions>
     <thead>
       <tr>
-        <th>Type</th>
-        <th>Amount</th>
-        <th>Currency</th>
+        <HeaderEntry>Type</HeaderEntry>
+        <HeaderEntry>Amount</HeaderEntry>
+        <HeaderEntry>Currency</HeaderEntry>
       </tr>
     </thead>
     <tbody>
-      {items.map((item) =>
-        <TransactionItem
-          item={item}
-        />
-      )}
+      {items.map(item => (
+        <TransactionItem item={item} />
+      ))}
     </tbody>
   </Transactions>
 );
@@ -36,5 +39,5 @@ TransactionItem.propTypes = {
 };
 
 TransactionHistory.propTypes = {
-  items: PropTypes.array
-}
+  items: PropTypes.array,
+};
