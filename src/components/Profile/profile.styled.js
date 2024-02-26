@@ -6,7 +6,7 @@ export const Card = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 10px;
+  margin: 1em 0;
   background-color: yellow;
   border: 1px black;
   border-radius: 10px;
@@ -18,38 +18,35 @@ export const Description = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  witdh: 100%;
+  width: 100%;
   margin: 0;
-  padding: 20px;
+  padding: 1.2em;
   background-color: lightgoldenrodyellow;
-  border: 1px black;
-  /* border-radius: 10px; */
+  font-size: 1em;
 `;
 
 export const Avatar = styled.img`
   width: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 `;
 
 export const Name = styled.p`
-  font-size: 24px;
+  font-size: 1.4em;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.6em;
 `;
 
 export const Tag = styled.p`
-  font-size: 16px;
-  margin-bottom: 6px;
+  margin-bottom: 0.6em;
 `;
 
 export const Location = styled.p`
-  font-size: 16px;
-  margin-bottom: 6px;
+  margin-bottom: 0.6em;
 `;
 
 export const Stats = styled.ul`
   width: 100%;
-  padding: 10px 20px;
+  padding: 0.6em 1.2em;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
@@ -60,7 +57,6 @@ export const Stats = styled.ul`
 export const Stat = styled.li`
   display: flex;
   flex-direction: column;
-  gap: 12px;
   align-items: center;
 `;
 

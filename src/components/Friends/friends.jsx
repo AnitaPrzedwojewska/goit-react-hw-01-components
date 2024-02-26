@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const FriendListItem = ({ avatar, name, isOnline }) => (
   <Friend>
-    <Status></Status>
+    <Status isOnline={isOnline}></Status>
     <Avatar class="avatar" src={avatar} alt="User avatar" width="48" />
     <Name>{name}</Name>
   </Friend>

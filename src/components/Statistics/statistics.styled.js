@@ -5,7 +5,7 @@ export const StatsCard = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
   background-color: lightcyan;
   border-radius: 10px;
   overflow: hidden;
@@ -13,8 +13,8 @@ export const StatsCard = styled.section`
 
 export const Title = styled.h2`
   display: block;
-  margin: 0 auto;
-  font-size: 1.6em;
+  margin: 0.5em auto;
+  font-size: 1.4em;
 `;
 
 export const StatList = styled.ul`
@@ -29,7 +29,7 @@ export const StatList = styled.ul`
 export const StatItem = styled.li`
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 0.6em 1.2em;
   background-color: lightblue;
 `;
 

@@ -8,7 +8,7 @@ import {
   Stats,
   Stat,
   Label,
-  Quantity
+  Quantity,
 } from './profile.styled';
 import PropTypes from 'prop-types';
 
@@ -33,7 +33,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => (
       </Stat>
       <Stat>
         <Label>Views</Label>
-        <Quantity>{stats.view}</Quantity>
+        <Quantity>{stats.views}</Quantity>
       </Stat>
       <Stat>
         <Label>Likes</Label>
