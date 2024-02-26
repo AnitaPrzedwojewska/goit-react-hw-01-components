@@ -6,8 +6,8 @@ import {
 } from './transactions.styled';
 import PropTypes from 'prop-types';
 
-const TransactionItem = ({ item }) => (
-  <Transaction>
+const TransactionItem = ({ id, item, index }) => (
+  <Transaction index={index}>
     <Entry>{item.type}</Entry>
     <Entry>{item.amount}</Entry>
     <Entry>{item.currency}</Entry>
@@ -25,7 +25,11 @@ export const TransactionHistory = ({ items }) => (
     </thead>
     <tbody>
       {items.map(item => (
-        <TransactionItem item={item} />
+        <TransactionItem
+          key={item.id}
+          item={item}
+          index={(items.indexOf(item) + 1) % 2}
+        />
       ))}
     </tbody>
   </Transactions>

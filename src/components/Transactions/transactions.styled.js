@@ -15,7 +15,7 @@ export const HeaderEntry = styled.td`
 `;
 
 export const Transaction = styled.tr`
-  background-color: pink;
+  background-color: ${props => (props.index ? 'pink' : 'plum')};
   margin-bottom: 2px;
 `;
 

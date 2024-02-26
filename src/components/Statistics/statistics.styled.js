@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-// import randomColor from 'randomcolor';
 
 export const StatsCard = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-bottom: 1em;
-  background-color: lightcyan;
+  background-color: lightgrey;
   border-radius: 10px;
   overflow: hidden;
 `;
@@ -30,7 +29,7 @@ export const StatItem = styled.li`
   display: flex;
   flex-direction: column;
   padding: 0.6em 1.2em;
-  background-color: lightblue;
+  background-color: ${props => props.color};
 `;
 
 export const Label = styled.span`
@@ -41,7 +40,3 @@ export const Quantity = styled.span`
   font-size: 16px;
   font-weight: bold;
 `;
-
-// function getRandomHexColor() {
-//   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-// }
